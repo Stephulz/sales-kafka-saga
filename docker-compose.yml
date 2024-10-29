@@ -9,8 +9,8 @@ services:
     networks:
       - orchestrator-saga
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=123456
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 123456
     ports:
       - "27017:27017"
 
