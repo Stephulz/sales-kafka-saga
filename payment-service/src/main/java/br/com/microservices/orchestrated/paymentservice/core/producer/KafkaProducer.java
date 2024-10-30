@@ -19,7 +19,7 @@ public class KafkaProducer {
             log.info("Sending event to topic {} with data {}", orchestratorTopic, payload);
             kafkaTemplate.send(orchestratorTopic, payload);
         } catch (Exception ex) {
-            log.error("Error trying to send data to topic {} with data {}", orchestratorTopic, payload);
+            log.error("Error {} with cause {} when trying to send data to topic {} with data {}", ex.getMessage(), ex.getCause(), orchestratorTopic, payload);
         }
     }
 }
