@@ -5,10 +5,10 @@
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.1.2/613d07277e91a8ed609d45f6b528809eadd1fef7/spring-boot-configuration-processor-3.1.2.jar" />
-          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.28/a2ff5da8bcd8b1b26f36b806ced63213362c6dcc/lombok-1.18.28.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../gradle-9.6.1/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/3.5.16/fa1259e353a03c0e70c7b8017fbd05fbc738296f/spring-boot-configuration-processor-3.5.16.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../gradle-9.6.1/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.46/a5cfe99fdf320e84955ef653f2ce1bf789d11385/lombok-1.18.46.jar" />
         </processorPath>
-        <module name="product-validation-service.main" />
+        <module name="order-service.main" />
       </profile>
     </annotationProcessing>
   </component>
