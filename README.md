@@ -1,5 +1,5 @@
-# Sales Kafka - Saga Patterns
-Monorepo of a project implementing saga patterns with Java Spring Boot and Kafka.
+# 🚀 Sales Kafka - Orchestration Saga Pattern
+Monorepo implementing the **Saga Pattern (Orchestration)** using **Java, Spring Boot, Apache Kafka, PostgreSQL, MongoDB, and Docker**.
 
 [![Java](https://img.shields.io/badge/Java-21-339933?logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
@@ -10,7 +10,15 @@ Monorepo of a project implementing saga patterns with Java Spring Boot and Kafka
 [![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Redpanda Console](https://img.shields.io/badge/Redpanda_Console-AE1C28?logo=foodpanda&logoColor=white)](https://github.com/redpanda-data/console)
 
-## Technologies
+
+## 📑 Table of Contents
+- [🛠️ Technologies](#️-technologies)
+- [🏗️ Architecture](#️-architecture)
+- [🗺️ Topic Mapping](#️-topic-mapping)
+- [☕ Getting Started](#️-getting-started)
+- [🔀 Choreography Version](#-choreography-version)
+
+## 🛠️ Technologies
 * **Java 21**
 * **Spring Boot 3.5**
 * **Gradle 9.6**
@@ -21,8 +29,8 @@ Monorepo of a project implementing saga patterns with Java Spring Boot and Kafka
 * **Docker**
 * **Redpanda Console**
 
-# Orchestrated Saga Architecture
-### **Branch: master**
+## 🏗️ Architecture
+### 🎼 Orchestrated Saga Architecture
 ![image](https://github.com/user-attachments/assets/f3cb1a19-8ea4-4d3c-8356-a2f157f6e0aa)
 
 * **Order-Service**: microservice responsible only for generating an initial request and receiving a notification. Here we have REST endpoints to start the process and retrieve event data. The database used will be MongoDB.
@@ -33,7 +41,7 @@ Monorepo of a project implementing saga patterns with Java Spring Boot and Kafka
 
 **All services will go up through **docker-compose.yml**.**
 
-# Topic Mapping
+## 🗺️ Topic Mapping
 
 | Event                          | Service                    | Kafka Topic                 | Type               |
 |--------------------------------|----------------------------|-----------------------------|--------------------|
@@ -53,16 +61,30 @@ Monorepo of a project implementing saga patterns with Java Spring Boot and Kafka
 |                                | inventory-service          | inventory-fail              | consumer           |
 |                                | inventory-service          | orchestrator                | producer           |
 
-# How to run
-There are several ways to run:
-1. Running everything via `docker-compose`
-2. Running everything through the automation `script` that i made available (`build-bash.sh`)
-3. Running only the database and message broker (Kafka) services separately
-4. Running applications manually via CLI (`java -jar` or `gradle bootRun` or via IntelliJ)
+## ▶️ Getting Started
 
+### ☕ How to run
+There are several ways to run:
+### 🐳 Option 1 — Docker Compose
+Running everything via `docker-compose`
+
+### ⚙️ Option 2 — Build Script
+Running everything through the automation `script` that i made available (`build-bash.sh`)
+
+### 💻 Option 3 — Run Infrastructure Only
+Running only the database and message broker (Kafka) services separately
+
+### ☕ Option 4 — Run Services Manually
+Running applications manually via CLI (`java -jar` or `gradle bootRun` or via IntelliJ)
+
+## 📦 Requirements
 To run the applications, you will need to have installed:
 
 * **Docker**
 * **Java 21**
 * **Gradle 9.6**
 
+## 🔀 Choreography Version
+
+👉 Check out the choreography-based implementation:
+https://github.com/Stephulz/sales-kafka-saga-choreographed
