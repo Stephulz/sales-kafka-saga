@@ -50,6 +50,18 @@ services:
     ports:
       - "5434:5432"
 
+  auth-db:
+    image: postgres:latest
+    container_name: auth-db
+    networks:
+      - orchestrator-saga
+    environment:
+      - POSTGRES_DB=auth-db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5435:5432"
+
   kafka:
     container_name: kafka
     image: obsidiandynamics/kafka
@@ -168,6 +180,23 @@ services:
       - DB_PASSWORD=postgres
     ports:
       - 8092:8092
+
+  auth-service:
+    build: './auth-service'
+    container_name: auth-service
+    depends_on:
+      - kafka
+    networks:
+      - orchestrator-saga
+    environment:
+      - KAFKA_BROKER=kafka:29092
+      - DB_HOST=auth-db
+      - DB_NAME=auth-db
+      - DB_PORT=5432
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+    ports:
+      - 8093:8093
 
 networks:
   orchestrator-saga:

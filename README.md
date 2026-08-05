@@ -1,8 +1,8 @@
 # 🚀 Sales Kafka - Orchestration Saga Pattern
 Monorepo implementing the **Saga Pattern (Orchestration)** using **Java, Spring Boot, Apache Kafka, PostgreSQL, MongoDB, and Docker**.
 
-[![Java](https://img.shields.io/badge/Java-21-339933?logo=openjdk&logoColor=white)](https://openjdk.org/)
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Java](https://img.shields.io/badge/Java-25-339933?logo=openjdk&logoColor=white)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring_Boot-4.1.0-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 [![Gradle](https://img.shields.io/badge/Gradle-9.6-02303A?logo=gradle&logoColor=white)](https://gradle.org/)
 [![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
@@ -19,8 +19,8 @@ Monorepo implementing the **Saga Pattern (Orchestration)** using **Java, Spring 
 - [🔀 Choreography Version](#-choreography-version)
 
 ## 🛠️ Technologies
-* **Java 21**
-* **Spring Boot 3.5**
+* **Java 25**
+* **Spring Boot 4.1.0**
 * **Gradle 9.6**
 * **Apache Kafka**
 * **API REST**
@@ -81,7 +81,7 @@ Running applications manually via CLI (`java -jar` or `gradle bootRun` or via In
 To run the applications, you will need to have installed:
 
 * **Docker**
-* **Java 21**
+* **Java 25**
 * **Gradle 9.6**
 
 ## 🔀 Choreography Version

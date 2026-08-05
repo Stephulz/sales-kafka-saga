@@ -1,0 +1,25 @@
+server:
+  port: 8093
+
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5435}/${DB_NAME:auth-db}
+    username: ${DB_USER:postgres}
+    password: ${DB_PASSWORD:postgres}
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org:
+      apache:
+        kafka: OFF
