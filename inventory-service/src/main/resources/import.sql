@@ -1,4 +1,1 @@
-INSERT INTO public.inventory(id, product_code, available) VALUES (1, 'COMIC_BOOKS', 4)
-INSERT INTO public.inventory(id, product_code, available) VALUES (2, 'BOOKS', 2)
-INSERT INTO public.inventory(id, product_code, available) VALUES (3, 'MOVIES', 5)
-INSERT INTO public.inventory(id, product_code, available) VALUES (4, 'MUSIC', 9)
+INSERT INTO public.auth(id, email, password_hash, role, enabled, created_at) VALUES (1, 'stefansanches9@gmail.com', 1, 'CUSTOMER', true, 1)
